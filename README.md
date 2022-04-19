@@ -1,4 +1,4 @@
-# [https://lexical.dev](Lexical) PDF Export
+# [Lexical](https://lexical.dev) PDF Export
 
 This is a demo of how lexical can be used to export to PDFs.
 
