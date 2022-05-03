@@ -1,0 +1,87 @@
+.page-indicator {
+  margin-top: 11in;
+  position: relative;
+  color: #ffd578;
+}
+
+.page-indicator hr {
+  margin: 0;
+  border: 1px dashed #ffd578;
+}
+
+.page-indicator-current {
+  position: absolute;
+  top: 0.25em;
+}
+
+.page-indicator-last {
+  position: absolute;
+  top: -1.5em;
+}
+
+.editor {
+  margin: auto;
+  position: relative;
+  width: 8.5in;
+}
+
+.editor-container {
+  color: #000;
+  position: relative;
+  font-weight: 400;
+  text-align: left;
+}
+
+.editor-inner {
+  display: flex;
+  margin: auto;
+  width: 8.5in;
+  position: absolute;
+  line-height: 14px;
+  font-size: 14px;
+}
+
+.editor-input {
+  flex: 1;
+  padding: 0 0.5in;
+  resize: none;
+  caret-color: rgb(5, 5, 5);
+  position: relative;
+  tab-size: 1;
+  outline: 0;
+  caret-color: #444;
+}
+
+.editor-outer {
+  position: absolute;
+  width: 8.5in;
+  background: white;
+}
+
+.editor-placeholder {
+  padding: 0 0.5in;
+  color: #999;
+  overflow: hidden;
+  position: absolute;
+  text-overflow: ellipsis;
+  top: 0;
+  font-size: 15px;
+  user-select: none;
+  display: inline-block;
+  pointer-events: none;
+}
+
+@media print {
+  .editor-container {
+    padding: 0;
+  }
+
+  .editor-inner {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .tree-view-output {
+    display: none;
+  }
+}
